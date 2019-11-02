@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74e33ac4989ffbadfffbc80830af0100",
+    "revision": "c1a0b48500c77471a60cdf53c776e6da",
     "url": "/Robo-PWA/index.html"
   },
   {
-    "revision": "eeeeac5c3aeeb535c5f4",
+    "revision": "1fb7d87f193e36cab982",
     "url": "/Robo-PWA/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "95b20280ab6dd4370848",
+    "revision": "c5f89b4dc24156971940",
     "url": "/Robo-PWA/static/css/main.90ca2ce2.chunk.css"
   },
   {
-    "revision": "eeeeac5c3aeeb535c5f4",
-    "url": "/Robo-PWA/static/js/2.07323b84.chunk.js"
+    "revision": "1fb7d87f193e36cab982",
+    "url": "/Robo-PWA/static/js/2.fb5f9ebf.chunk.js"
   },
   {
-    "revision": "95b20280ab6dd4370848",
-    "url": "/Robo-PWA/static/js/main.4f6daf63.chunk.js"
+    "revision": "c5f89b4dc24156971940",
+    "url": "/Robo-PWA/static/js/main.1fdcf2ec.chunk.js"
   },
   {
     "revision": "78015304c106fe013a4b",

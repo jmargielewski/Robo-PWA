@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Robo-PWA/static/css/main.90ca2ce2.chunk.css",
-    "main.js": "/Robo-PWA/static/js/main.4f6daf63.chunk.js",
-    "main.js.map": "/Robo-PWA/static/js/main.4f6daf63.chunk.js.map",
+    "main.js": "/Robo-PWA/static/js/main.1fdcf2ec.chunk.js",
+    "main.js.map": "/Robo-PWA/static/js/main.1fdcf2ec.chunk.js.map",
     "runtime-main.js": "/Robo-PWA/static/js/runtime-main.e545f8c2.js",
     "runtime-main.js.map": "/Robo-PWA/static/js/runtime-main.e545f8c2.js.map",
     "static/css/2.eb45ad44.chunk.css": "/Robo-PWA/static/css/2.eb45ad44.chunk.css",
-    "static/js/2.07323b84.chunk.js": "/Robo-PWA/static/js/2.07323b84.chunk.js",
-    "static/js/2.07323b84.chunk.js.map": "/Robo-PWA/static/js/2.07323b84.chunk.js.map",
+    "static/js/2.fb5f9ebf.chunk.js": "/Robo-PWA/static/js/2.fb5f9ebf.chunk.js",
+    "static/js/2.fb5f9ebf.chunk.js.map": "/Robo-PWA/static/js/2.fb5f9ebf.chunk.js.map",
     "index.html": "/Robo-PWA/index.html",
-    "precache-manifest.97fa43f97e069295ccff33a523de8e1c.js": "/Robo-PWA/precache-manifest.97fa43f97e069295ccff33a523de8e1c.js",
+    "precache-manifest.2503ad28faaf09bb1c82d51e0d2d50c4.js": "/Robo-PWA/precache-manifest.2503ad28faaf09bb1c82d51e0d2d50c4.js",
     "service-worker.js": "/Robo-PWA/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/Robo-PWA/static/css/2.eb45ad44.chunk.css.map",
     "static/css/main.90ca2ce2.chunk.css.map": "/Robo-PWA/static/css/main.90ca2ce2.chunk.css.map",
@@ -18,8 +18,8 @@
   "entrypoints": [
     "static/js/runtime-main.e545f8c2.js",
     "static/css/2.eb45ad44.chunk.css",
-    "static/js/2.07323b84.chunk.js",
+    "static/js/2.fb5f9ebf.chunk.js",
     "static/css/main.90ca2ce2.chunk.css",
-    "static/js/main.4f6daf63.chunk.js"
+    "static/js/main.1fdcf2ec.chunk.js"
   ]
 }
