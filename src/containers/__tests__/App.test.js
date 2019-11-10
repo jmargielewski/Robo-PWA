@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { App } from './App';
+import { App } from '../App';
 import toJson from 'enzyme-to-json';
 // npm redux-mock-store
 

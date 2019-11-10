@@ -10,17 +10,30 @@ import Header from '../components/Header';
 
 import './App.css';
 
-export class App extends Component {
-  componentDidMount() {
+export interface IRobot {
+  name: string;
+  id: number;
+  email: string;
+}
+
+interface IAppProps {
+  onRequestRobots: () => {};
+  onSearchChange(event: React.SyntheticEvent<HTMLInputElement>): void;
+  searchField: string;
+  isPending: boolean;
+  robots: Array<IRobot>,
+}
+
+export class App extends Component<IAppProps> {
+  componentDidMount(): void {
     this.props.onRequestRobots();
   }
 
-  filterRobots = () => 
-    this.props.robots.filter(robot => {
-      return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
-    });
+  filterRobots = (): IRobot[] => 
+    this.props.robots.filter((robot: IRobot) =>
+      robot.name.toLowerCase().includes(this.props.searchField.toLowerCase()));
 
-  render() {
+  render(): JSX.Element {
     const { onSearchChange, isPending } = this.props;
     
     return (
