@@ -10,6 +10,35 @@ import Header from '../components/Header';
 
 import './App.css';
 
+export class App extends Component {
+  componentDidMount() {
+    this.props.onRequestRobots();
+  }
+
+  filterRobots = () => 
+    this.props.robots.filter(robot => {
+      return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
+    });
+
+  render() {
+    const { onSearchChange, isPending } = this.props;
+    
+    return (
+      <div className='tc'>
+        <Header />
+        <SearchBox searchChange={onSearchChange}/>
+        <Scroll>
+          { isPending ? <h1>Loading</h1> :
+            <ErrorBoundry>
+              <CardList robots={this.filterRobots()} />
+            </ErrorBoundry>
+          }
+        </Scroll>
+      </div>
+    );
+  }
+}
+
 const mapStateToProps = (state) => {
   return {
     searchField: state.searchRobots.searchField,
@@ -25,30 +54,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-class App extends Component {
-  componentDidMount() {
-    this.props.onRequestRobots();
-  }
-
-  render() {
-    const { robots, searchField, onSearchChange, isPending } = this.props;
-    const filteredRobots = robots.filter(robot => {
-      return robot.name.toLowerCase().includes(searchField.toLowerCase());
-    })
-    return (
-      <div className='tc'>
-        <Header />
-        <SearchBox searchChange={onSearchChange}/>
-        <Scroll>
-          { isPending ? <h1>Loading</h1> :
-            <ErrorBoundry>
-              <CardList robots={filteredRobots} />
-            </ErrorBoundry>
-          }
-        </Scroll>
-      </div>
-    );
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(App);

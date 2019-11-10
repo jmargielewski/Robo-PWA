@@ -5,8 +5,8 @@
   "homepage": "https://jmargielewski.github.io/Robo-PWA",
   "dependencies": {
     "gh-pages": "^2.1.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-redux": "^5.0.7",
     "react-scripts": "^3.2.0",
     "redux": "^3.7.2",
@@ -33,5 +33,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "redux-mock-store": "^1.5.3"
   }
 }
